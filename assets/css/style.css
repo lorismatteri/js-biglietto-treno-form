@@ -6,4 +6,92 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: #B91450;
+  height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+
+.rounded {
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px black;
+  margin-top: 2rem;
+}
+
+.row_form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row_btn {
+  text-align: center;
+}
+
+.card label {
+  color: #B91450;
+  padding: 1rem;
+}
+
+button {
+  margin: 3rem 1rem 1rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #B91450;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #CCCCCC;
+}
+
+input, select {
+  border: 1px solid #B91450;
+  border-radius: 5px;
+}
+
+#biglietto {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.row_ticket {
+  display: flex;
+}
+
+.col_1 {
+  flex-grow: 1;
+  background-color: #CCCCCC;
+  padding: 1rem;
+}
+
+.col_3 {
+  flex-grow: 3;
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+#biglietto .card {
+  padding: 1.5rem;
+}
+
+#biglietto .row_ticket {
+  border: 1px solid black;
+  border-right: 0;
 }
