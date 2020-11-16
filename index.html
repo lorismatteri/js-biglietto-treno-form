@@ -11,7 +11,74 @@
   </head>
   <body>
 
-    <h1>ciaone</h1>
+    <section id="calcolo_biglietto">
+      <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
+      <div class="card rounded">
+        <div class="row">
+          <div class="col">
+            <label for="name">Nome e Cognome</label>
+            <input type="text" name="name" id="full_name">
+          </div>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input type="number" name="km" id="km">
+          </div>
+          <div class="col">
+            <label for="age">Fascia di età</label>
+            <select name="age" id="age">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over_65">Over65</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <button type="button" name="button" id="btn_genera">Genera</button>
+          <button type="button" name="button" id="btn_annulla">Annulla</button>
+        </div>
+      </div>
+    </section>
+    <!-- /Calcolo biglietto -->
+
+    <section id="biglietto">
+      <h2>IL TUO BIGLIETTO</h2>
+
+      <div class="card">
+        <h4>DETTAGLIO PASSEGGERI</h4>
+        <div class="row">
+          <div class="col_1">
+            <h3>NOME PASSEGGERO</h3>
+            <h3 id="nome_passeggero"></h3>
+          </div>
+          <div class="col_3">
+            <table>
+              <thead>
+                <tr>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice CP</th>
+                  <th>Costo Biglietto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th id="offerta"></th>
+                  <th id="carrozza"></th>
+                  <th id="codice_cp"></th>
+                  <th id="ticket_price"></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
+    </section>
+    <!-- /Biglietto -->
+
+
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>
